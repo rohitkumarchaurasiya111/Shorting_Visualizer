@@ -59,15 +59,6 @@ To run the Sorting Visualizer locally, you'll need a basic web server to serve t
 - **images**: Contains images used in the README and other parts of the repository.
 - **gif.gif**: Demonstrates the visualization in action.
 
-### Screenshots
-
-- **Initial State**:
-
-    ![Initial State](images/sort_project_pic.jpg)
-
-- **Bubble Sort in Action**:
-
-    ![Bubble Sort in Action](images/gif.gif)
 
 ## Contributing
 
@@ -84,5 +75,5 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 
 Rohit Kumar Chaurasiya - rohitkumarchaurasiya111@gmail.com
 
-Project Link: [https://github.com/YourUsername/Sorting_Visualizer]([https://github.com/YourUsername/Sorting_Visualizer](https://github.com/rohitkumarchaurasiya111/Shorting_Visualizer.git))
+Project Link: https://github.com/rohitkumarchaurasiya111/Shorting_Visualizer.git
 
