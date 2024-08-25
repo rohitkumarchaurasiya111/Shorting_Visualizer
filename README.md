@@ -82,7 +82,7 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 
 ## Contact
 
-Rohit Kumar Chaurasiya - [@YourTwitterHandle](https://twitter.com/yourhandle) - rohitkumarchaurasiya111@gmail.com
+Rohit Kumar Chaurasiya - rohitkumarchaurasiya111@gmail.com
 
-Project Link: [https://github.com/YourUsername/Sorting_Visualizer](https://github.com/YourUsername/Sorting_Visualizer)
+Project Link: [https://github.com/YourUsername/Sorting_Visualizer]([https://github.com/YourUsername/Sorting_Visualizer](https://github.com/rohitkumarchaurasiya111/Shorting_Visualizer.git))
 
