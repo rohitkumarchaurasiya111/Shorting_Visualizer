@@ -1,4 +1,8 @@
+//Creator - Rohit Kumar Chaurasiya
+
+
 //constants/globals
+
 var arr = Array(0);
 const width = window.innerWidth;
 const height = window.innerHeight - 200;

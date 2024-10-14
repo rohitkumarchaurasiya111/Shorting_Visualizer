@@ -1,3 +1,5 @@
+//Creator - Rohit Kumar Chaurasiya
+
 function bubbleSort_t(arr) {
     var swapped = false;
 
