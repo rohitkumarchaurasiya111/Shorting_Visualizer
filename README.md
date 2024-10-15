@@ -40,6 +40,8 @@ Each algorithm has been explained in detail in the application itself with links
 
 ## Screenshots
 ![image](https://github.com/user-attachments/assets/214783b4-f1fb-43e7-868c-fd5626f49b1e)
+![image](https://github.com/user-attachments/assets/f424e1cf-0980-42f9-a8e0-7343d289baf3)
+
 
 
 ## Future Improvements
