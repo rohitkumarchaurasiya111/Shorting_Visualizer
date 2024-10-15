@@ -1,7 +1,9 @@
+// Created by Rohit Kumar Chaurasiya
+
 // The lerp function, short for "linear interpolation," is used to calculate a value that is a weighted average between two points. It’s commonly used in animations and graphics to create smooth transitions.
 
 
-function lerp(start, end, t){
+function lerp(start, end, t) {
     return (1 - t) * start + t * end;
 }
 

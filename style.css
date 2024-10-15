@@ -1,189 +1,224 @@
 /* Basic reset to remove default padding and margin */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body Styling */
-  body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #1E293B; /* Dark background */
-    color: #E2E8F0; /* Light text */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-  }
-  
-  /* Heading Styling */
-  h1#heading {
-    font-size: 2.5rem;
-    color: #60A5FA; /* Light blue */
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
-  }
-  
-  /* Sorting Visualizer Container */
-  #Sorting {
-    background-color: #0F172A; /* Darker background for contrast */
-    padding: 20px;
-    border-radius: 12px;
-    width: 100%;
-    max-width: 900px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  /* Flexbox for Dropdown and Range Input */
-  #Sorting label {
-    margin-right: 10px;
-  }
-  
-  #Sorting select, #Sorting input[type="range"], #Sorting button {
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    margin: 10px 0;
-    cursor: pointer;
-  }
-  
-  #Sorting select {
-    background-color: #334155; /* Darker input background */
-    color: #E2E8F0;
-  }
-  
-  #Sorting select:hover {
-    background-color: #475569;
-  }
-  
-  #Sorting input[type="range"] {
-    width: 250px; /* Range slider width */
-    background-color: #3B82F6; /* Blue slider track */
-  }
-  
-  #Sorting input[type="range"]::-webkit-slider-thumb {
-    background-color: #60A5FA;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  #Sorting input[type="range"]:hover {
-    opacity: 0.7;
-  }
-  
-  #speedValue {
-    font-size: 1.1rem;
-    margin-left: 10px;
-    color: #A5B4FC; /* Light purple */
-  }
-  
-  /* Flexbox Container for Buttons */
-  #Sorting div {
-    display: flex;
-    justify-content: center;
-    gap: 15px; /* Space between buttons */
-    margin: 15px 0;
-  }
-  
-  /* Button Styling */
-  #Sorting button {
-    background-color: #1E40AF; /* Dark blue */
-    color: #E2E8F0;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  #Sorting button:hover {
-    background-color: #3B82F6; /* Lighter blue */
-    transform: scale(1.05);
-  }
-  
-  #Sorting button:active {
-    transform: scale(0.95);
-  }
-  
-  /* Canvas Styling */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1e293b; /* Dark background */
+  color: #e2e8f0; /* Light text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Heading Styling */
+h1#heading {
+  font-size: 2.5rem;
+  color: #60a5fa; /* Light blue */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* Sorting Visualizer Container */
+#Sorting {
+  background-color: #0f172a; /* Darker background for contrast */
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Flexbox for Dropdown and Range Input */
+#Sorting label {
+  margin-right: 10px;
+}
+
+#Sorting select,
+#Sorting input[type="range"],
+#Sorting button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+#Sorting select {
+  background-color: #334155; /* Darker input background */
+  color: #e2e8f0;
+}
+
+#Sorting select:hover {
+  background-color: #475569;
+}
+
+#Sorting input[type="range"] {
+  width: 250px; /* Range slider width */
+  background-color: #3b82f6; /* Blue slider track */
+}
+
+#Sorting input[type="range"]::-webkit-slider-thumb {
+  background-color: #60a5fa;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#Sorting input[type="range"]:hover {
+  opacity: 0.7;
+}
+
+#speedValue {
+  font-size: 1.1rem;
+  margin-left: 10px;
+  color: #a5b4fc; /* Light purple */
+}
+
+/* Flexbox Container for Buttons */
+#Sorting div {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between buttons */
+  margin: 15px 0;
+}
+
+/* Button Styling */
+#Sorting button {
+  background-color: #1e40af; /* Dark blue */
+  color: #e2e8f0;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#Sorting button:hover {
+  background-color: #3b82f6; /* Lighter blue */
+  transform: scale(1.05);
+}
+
+#Sorting button:active {
+  transform: scale(0.95);
+}
+
+/* Canvas Styling */
+canvas#myCanvas {
+  background-color: #0f172a; /* Dark background for canvas */
+  border: 3px solid #3b82f6; /* Light blue border */
+  border-radius: 12px;
+  margin-top: 20px;
+  width: 100%; /* Make canvas responsive */
+  max-width: 800px; /* Limit max width */
+  height: auto; /* Automatically adjust height to preserve aspect ratio */
+  aspect-ratio: 4 / 3; /* Maintain aspect ratio */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Explanation Section Styling */
+#Explanation {
+  background-color: #0f172a; /* Same background color for consistency */
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 900px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+
+#Explanation h2 {
+  color: #60a5fa;
+  margin-bottom: 10px;
+}
+
+#Explanation p,
+#Explanation ul,
+#Explanation ol {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+#Explanation h3 {
+  margin-top: 20px;
+  color: #a5b4fc;
+}
+
+#Explanation a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+#Explanation a:hover {
+  text-decoration: underline;
+}
+
+/* List Styling */
+ul,
+ol {
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* Creator Information Styling */
+#CreatorInformation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+
+#CreatorInformation a {
+  color: #e2e8f0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+#CreatorInformation a:hover {
+  color: #3b82f6; /* Hover color change */
+}
+
+#CreatorInformation i {
+  font-size: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
   canvas#myCanvas {
-    background-color: #0F172A; /* Dark background for canvas */
-    border: 3px solid #3B82F6; /* Light blue border */
-    border-radius: 12px;
-    margin-top: 20px;
-    width: 100%; /* Make canvas responsive */
-    max-width: 800px; /* Limit max width */
-    height: auto; /* Automatically adjust height to preserve aspect ratio */
-    aspect-ratio: 4 / 3; /* Maintain aspect ratio */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 100%; /* Make sure canvas fits within the container */
+    height: auto; /* Maintain aspect ratio */
   }
-  
-  /* Explanation Section Styling */
+
+  #Sorting,
   #Explanation {
-    background-color: #0F172A; /* Same background color for consistency */
-    padding: 20px;
-    border-radius: 12px;
-    max-width: 900px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    margin-top: 20px;
+    width: 100%;
   }
-  
-  #Explanation h2 {
-    color: #60A5FA;
-    margin-bottom: 10px;
+
+  #Sorting input[type="range"] {
+    width: 100%;
   }
-  
-  #Explanation p, #Explanation ul, #Explanation ol {
-    margin-bottom: 20px;
-    line-height: 1.6;
-    color: #CBD5E1;
+
+  #Sorting div {
+    flex-direction: column;
   }
-  
-  #Explanation h3 {
-    margin-top: 20px;
-    color: #A5B4FC;
+
+  #CreatorInformation {
+    flex-direction: column;
   }
-  
-  #Explanation a {
-    color: #3B82F6;
-    text-decoration: none;
-  }
-  
-  #Explanation a:hover {
-    text-decoration: underline;
-  }
-  
-  /* List Styling */
-  ul, ol {
-    margin-left: 20px;
-  }
-  
-  li {
-    margin-bottom: 5px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 600px) {
-    canvas#myCanvas {
-      width: 100%; /* Make sure canvas fits within the container */
-      height: auto; /* Maintain aspect ratio */
-    }
-  
-    #Sorting, #Explanation {
-      width: 100%;
-    }
-  
-    #Sorting input[type="range"] {
-      width: 100%;
-    }
-  
-    #Sorting div {
-      flex-direction: column;
-    }
-  }
-  
+}

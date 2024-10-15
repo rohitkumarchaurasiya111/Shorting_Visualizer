@@ -1,3 +1,5 @@
+//Created by Rohit Kumar Chaurasiya
+
 //Assessing the Element Canvas from HTML file
 const myCanvas = document.getElementById("myCanvas");
 

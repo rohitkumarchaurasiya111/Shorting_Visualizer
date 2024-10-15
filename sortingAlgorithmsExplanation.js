@@ -1,16 +1,18 @@
+// Created by Rohit Kumar Chaurasiya
+
 const selectElement = document.getElementById("Algorithms");
 selectElement.addEventListener("click", () => {
-    updateExplanation();
-})
+  updateExplanation();
+});
 
 function updateExplanation() {
-    const selectedValue = selectElement.value;
+  const selectedValue = selectElement.value;
 
-    const explanationDiv = document.getElementById("Explanation");
-    let content = '';
-    switch (selectedValue) {
-        case 'bubble':
-            content = `   <h2>Bubble Sort</h2>
+  const explanationDiv = document.getElementById("Explanation");
+  let content = '';
+  switch (selectedValue) {
+    case 'bubble':
+      content = `   <h2>Bubble Sort</h2>
       <p>
         Bubble Sort is a simple sorting algorithm that repeatedly compares
         adjacent elements in a list and swaps them if they are in the wrong
@@ -55,9 +57,9 @@ function updateExplanation() {
 
       <a href="https://www.geeksforgeeks.org/bubble-sort-algorithm/">Bubble Sort (GFG)</a>
     `;
-            break;
-        case 'selection':
-            content = `<h2>Selection Sort</h2>
+      break;
+    case 'selection':
+      content = `<h2>Selection Sort</h2>
 <p>
   Selection Sort is a simple comparison-based sorting algorithm that divides the input list into two parts: a sorted part and an unsorted part. It repeatedly selects the smallest (or largest) element from the unsorted part and moves it to the end of the sorted part. This process continues until the entire array is sorted.
 </p>
@@ -82,9 +84,9 @@ function updateExplanation() {
 
 <a href="https://www.geeksforgeeks.org/selection-sort/">Selection Sort (GFG)</a>
 `;
-            break;
-        case 'insertion':
-            content = `<h2>Insertion Sort</h2>
+      break;
+    case 'insertion':
+      content = `<h2>Insertion Sort</h2>
 <p>
   Insertion Sort is a simple and intuitive sorting algorithm that builds a sorted array one element at a time. It works by dividing the array into a sorted and an unsorted part. The algorithm takes each element from the unsorted part and inserts it into the correct position in the sorted part. This process continues until all elements are sorted.
 </p>
@@ -112,9 +114,9 @@ function updateExplanation() {
 
 <a href="https://www.geeksforgeeks.org/insertion-sort/">Insertion Sort (GFG)</a>
 `;
-            break;
-        case 'quick':
-            content = `<h2>Quick Sort</h2>
+      break;
+    case 'quick':
+      content = `<h2>Quick Sort</h2>
 <p>
   Quick Sort is a highly efficient sorting algorithm that utilizes a divide-and-conquer approach. It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays: those less than the pivot and those greater than the pivot. The sub-arrays are then sorted recursively. This process continues until the entire array is sorted.
 </p>
@@ -143,9 +145,9 @@ function updateExplanation() {
 
 <a href="https://www.geeksforgeeks.org/quick-sort/">Quick Sort (GFG)</a>
 `;
-            break;
-        default:
-            content = '';
-    }
-    explanationDiv.innerHTML = content;
+      break;
+    default:
+      content = '';
+  }
+  explanationDiv.innerHTML = content;
 }
