@@ -8,6 +8,7 @@ Welcome to the **Sorting Visualizer** created by **Rohit Kumar Chaurasiya**. Thi
 - **Animation Speed Control**: Adjust the speed of the animation using the provided slider to either slow down or speed up the visualization.
 - **Responsive Design**: The visualizer is responsive and works across various screen sizes, making it accessible on mobile and desktop devices.
 - **Explanations Included**: In addition to the visualization, each sorting algorithm comes with an explanation and time/space complexity details to enhance your learning experience.
+- **Audio Effects**: Sounds are played for each swap and comparison to enhance the user experience and help users visualize the sorting process more interactively.
 
 ## Technologies Used
 
