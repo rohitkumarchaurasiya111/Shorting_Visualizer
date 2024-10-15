@@ -31,29 +31,28 @@ Each algorithm has been explained in detail in the application itself with links
 
    ```bash
    git clone https://github.com/rohitkumarchaurasiya111/Sorting_Visualizer.git
-Open the index.html file in your web browser.
 
-Select the sorting algorithm from the dropdown menu.
+2. Open the `index.html` file in your web browser.
+3. Select the sorting algorithm from the dropdown menu.
+4. Adjust the animation speed using the slider.
+5. Click on **Start** to begin the visualization.
+6. Optionally, click on **Reset Elements** to generate new elements and restart the visualization.
 
-Adjust the animation speed using the slider.
+## Screenshots
 
-Click on Start to begin the visualization.
+*(Insert screenshot images here)*
 
-Optionally, click on Reset Elements to generate new elements and restart the visualization.
+## Future Improvements
 
-Screenshots
+- Adding more sorting algorithms like Merge Sort and Heap Sort.
+- Improving the UI for a better user experience.
+- Providing a step-by-step control for manually going through each comparison and swap.
 
-Future Improvements
-Adding more sorting algorithms like Merge Sort and Heap Sort.
-Improving the UI for a better user experience.
-Adding sound effects to enhance the user interaction.
-Providing a step-by-step control for manually going through each comparison and swap.
-Contributions
+## Contributions
+
 Contributions are welcome! Feel free to fork the repository and submit a pull request.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+## Connect with Me
 
-Connect with Me
-GitHub
-LinkedIn
+- [GitHub](https://github.com/rohitkumarchaurasiya111)
+- [LinkedIn](https://www.linkedin.com/in/rohit-kumar-chaurasiya-0862b1272/)
