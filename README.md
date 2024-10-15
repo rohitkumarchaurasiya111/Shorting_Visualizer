@@ -39,8 +39,8 @@ Each algorithm has been explained in detail in the application itself with links
 6. Optionally, click on **Reset Elements** to generate new elements and restart the visualization.
 
 ## Screenshots
+![image](https://github.com/user-attachments/assets/214783b4-f1fb-43e7-868c-fd5626f49b1e)
 
-*(Insert screenshot images here)*
 
 ## Future Improvements
 
