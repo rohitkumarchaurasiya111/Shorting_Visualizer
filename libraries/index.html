@@ -1,60 +1,99 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        <title>sort_visual</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="heading">Sorting Visualizer</h1>
 
-        <script src="libraries/p5.js"></script>
-        <script src="libraries/p5.dom.js"></script>
-        <script src="timer_algos.js"></script>
-        <script src="algorithms.js"></script>
-        <script src="sketch.js"></script>
+    <div id="Sorting">
+      <label for="Algorithms">Choose Sorting Algorithm: </label>
+      <select name="algo" id="Algorithms">
+        <option value="bubble">Bubble Sort</option>
+        <option value="selection">Selection Sort</option>
+        <option value="insertion">Insertion Sort</option>
+        <option value="quick">Quick Sort</option>
+      </select>
+      <br />
+      <label for="speed">Animation Speed (5-50): </label>
+      <input
+        type="range"
+        id="speed"
+        name="speed"
+        min="5"
+        max="50"
+        value="15"
+        step="1"
+        oninput="updateSpeed()"
+      />
+      <span id="speedValue">15</span>
 
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#" class="clickable">Algorithms</a>
-                    <ul>
-                        <li><a href="#" class="clickable" id="bubbleSort">Bubble Sort</a></li>
-                        <li><a href="#" class="clickable" id="selectionSort">Selection Sort</a></li>                        </li>
-                        <li><a href="#" class="clickable" id="mergeSort">Merge Sort</a></li>
-                        <li><a href="#" class="clickable" id="quickSort">Quick Sort</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href ="#">Data size</a>
-                    <input
-                        class="range-input"
-                        type="range"
-                        min="30"
-                        max="60"
-                        value="42"
-                        class="slider"
-                        id="data_size"
-                    />
-                </li>
-                <li>
-                    <a href="#">Speed</a>
-                    <input
-                        class="range-input"
-                        type="range"
-                        min="0"
-                        max="40"
-                        value="40"
-                        class="slider"
-                        id="frm"
-                    />
-                </li>
-                <li><a href="#" id="time">Time: -- </a></li>
-                <li><a href="#" class="clickable" id="reset">Reset</a></li>
-                <li><a href="https://github.com/SanuYadav00/Sorting-Visualizer" class="clickable" >Source Code</a></li>
-            </ul>
-        </nav>
-    </body>
+      <div>
+        <button onClick="init()" id="reset">Reset Elements</button>
+        <button onclick="play()" id="start">Start</button>
+      </div>
+
+      <!-- The HTML <canvas> element is used to draw graphics, on the fly, via JavaScript. -->
+      <!-- The <canvas> element is only a container for graphics. You must use JavaScript to actually draw the graphics. -->
+      <canvas id="myCanvas" width="500px" height="500px"></canvas>
+    </div>
+    <hr />
+
+    <div id="Explanation">
+      <h2>Bubble Sort</h2>
+      <p>
+        Bubble Sort is a simple sorting algorithm that repeatedly compares
+        adjacent elements in a list and swaps them if they are in the wrong
+        order. The process continues until no swaps are needed, indicating that
+        the list is sorted. During each pass, the largest unsorted element
+        "bubbles up" to its correct position at the end of the list. This
+        continues until the entire list is sorted.
+      </p>
+      <h3>Time Complexity:</h3>
+      <ul>
+        <li>Worst-Case Time Complexity: O(n²)</li>
+        <li>Average Time Complexity: O(n²)</li>
+        <li>
+          Best-Case Time Complexity: O(n)<br />
+          ----The array is already sorted
+        </li>
+      </ul>
+
+      <h3>Space Complexity - O(1)</h3>
+
+      <h3>Algorithm:</h3>
+      <ol>
+        <li>Start with the first element of the array.</li>
+        <li>Repeat the following steps until the array is sorted:</li>
+        <ol>
+          <li>For each pair of adjacent elements:</li>
+          <ol>
+            <li>If the first element is greater than the second, swap them.</li>
+          </ol>
+          <li>Move to the next pair of adjacent elements.</li>
+          <li>Continue until the end of the array is reached.</li>
+        </ol>
+        <li>
+          After each full pass, the largest unsorted element will be in its
+          correct position.
+        </li>
+        <li>
+          Repeat the process until no swaps are needed, indicating the array is
+          sorted.
+        </li>
+      </ol>
+
+      <a href="https://www.geeksforgeeks.org/bubble-sort-algorithm/"
+        >Bubble Sort (GFG)</a
+      >
+    </div>
+
+    <script src="updateExplanation.js"></script>
+    <script src="Math.js"></script>
+    <script src="column.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>

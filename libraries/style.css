@@ -1,93 +1,189 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+/* Basic reset to remove default padding and margin */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    color: white;
-}
-body {
-    background: #f2f2f2;
-}
-nav {
-    background: #1b1b1b;
-    width: 100%;
-}
-nav:after {
-    content: "";
-    clear: both;
-    display: table;
-}
-nav ul {
-    list-style: none;
-    position: relative;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1E293B; /* Dark background */
+    color: #E2E8F0; /* Light text */
+    display: flex;
+    flex-direction: column;
     align-items: center;
-}
-nav ul li {
-    display: inline-block;
-    margin: 0 5px;
-    color: #1b1b1b;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    line-height: 70px;
-    font-size: 16px;
-    padding: 8px 15px;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Heading Styling */
+  h1#heading {
+    font-size: 2.5rem;
+    color: #60A5FA; /* Light blue */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     text-align: center;
-}
-
-/* nav ul li a:hover {
-    border-radius: 5px;
-    border-bottom: 1px solid #33ffff;
-} */
-.clickable:hover {
-    border-radius: 5px;
-    border-bottom: 1px solid #33ffff;
-    cursor: pointer;
-}
-nav ul ul {
-    position: absolute;
-    top: 70px;
-    opacity: 0;
-    visibility: hidden;
-}
-nav ul :hover > ul {
-    opacity: 1;
-    visibility: visible;
-}
-
-nav ul ul li {
-    background-color: #1b1b1b;
-    position: relative;
-    margin: 0px;
-    width: 200px;
-    float: none;
-    display: list-item;
-    border-bottom: 1px solid;
-}
-
-.range-input {
-    background: teal;
-    -webkit-appearance: none;
-    height: 2px;
+  }
+  
+  /* Sorting Visualizer Container */
+  #Sorting {
+    background-color: #0F172A; /* Darker background for contrast */
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Flexbox for Dropdown and Range Input */
+  #Sorting label {
+    margin-right: 10px;
+  }
+  
+  #Sorting select, #Sorting input[type="range"], #Sorting button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
     outline: none;
-    border-radius: 2px;
-}
-
-.range-input::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: #33ffff;
+    font-size: 1rem;
+    margin: 10px 0;
     cursor: pointer;
-}
-.range-input::-moz-range-thumb {
-    -webkit-appearance: none;
-    width: 15px;
-    height: 15px;
+  }
+  
+  #Sorting select {
+    background-color: #334155; /* Darker input background */
+    color: #E2E8F0;
+  }
+  
+  #Sorting select:hover {
+    background-color: #475569;
+  }
+  
+  #Sorting input[type="range"] {
+    width: 250px; /* Range slider width */
+    background-color: #3B82F6; /* Blue slider track */
+  }
+  
+  #Sorting input[type="range"]::-webkit-slider-thumb {
+    background-color: #60A5FA;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
-    background: #33ffff;
     cursor: pointer;
-}
+  }
+  
+  #Sorting input[type="range"]:hover {
+    opacity: 0.7;
+  }
+  
+  #speedValue {
+    font-size: 1.1rem;
+    margin-left: 10px;
+    color: #A5B4FC; /* Light purple */
+  }
+  
+  /* Flexbox Container for Buttons */
+  #Sorting div {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+    margin: 15px 0;
+  }
+  
+  /* Button Styling */
+  #Sorting button {
+    background-color: #1E40AF; /* Dark blue */
+    color: #E2E8F0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  #Sorting button:hover {
+    background-color: #3B82F6; /* Lighter blue */
+    transform: scale(1.05);
+  }
+  
+  #Sorting button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Canvas Styling */
+  canvas#myCanvas {
+    background-color: #0F172A; /* Dark background for canvas */
+    border: 3px solid #3B82F6; /* Light blue border */
+    border-radius: 12px;
+    margin-top: 20px;
+    width: 100%; /* Make canvas responsive */
+    max-width: 800px; /* Limit max width */
+    height: auto; /* Automatically adjust height to preserve aspect ratio */
+    aspect-ratio: 4 / 3; /* Maintain aspect ratio */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Explanation Section Styling */
+  #Explanation {
+    background-color: #0F172A; /* Same background color for consistency */
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+  }
+  
+  #Explanation h2 {
+    color: #60A5FA;
+    margin-bottom: 10px;
+  }
+  
+  #Explanation p, #Explanation ul, #Explanation ol {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #CBD5E1;
+  }
+  
+  #Explanation h3 {
+    margin-top: 20px;
+    color: #A5B4FC;
+  }
+  
+  #Explanation a {
+    color: #3B82F6;
+    text-decoration: none;
+  }
+  
+  #Explanation a:hover {
+    text-decoration: underline;
+  }
+  
+  /* List Styling */
+  ul, ol {
+    margin-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    canvas#myCanvas {
+      width: 100%; /* Make sure canvas fits within the container */
+      height: auto; /* Maintain aspect ratio */
+    }
+  
+    #Sorting, #Explanation {
+      width: 100%;
+    }
+  
+    #Sorting input[type="range"] {
+      width: 100%;
+    }
+  
+    #Sorting div {
+      flex-direction: column;
+    }
+  }
+  
