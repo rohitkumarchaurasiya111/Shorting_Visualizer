@@ -1,6 +1,8 @@
 # Sorting Visualizer
 
 Welcome to the **Sorting Visualizer** created by **Rohit Kumar Chaurasiya**. This web application visualizes different sorting algorithms using HTML, CSS, and JavaScript, allowing users to learn and understand the internal workings of sorting algorithms interactively.
+<br>
+Experience the visualizer live at [Sorting Visualizer](https://sortingvisualizer.noteslink.in/).
 
 ## Features
 
